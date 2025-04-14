@@ -9,8 +9,6 @@ This project compares two models — a custom LSTM with attention and a fine-tun
 ```
 ├── DistilBERT_Classifier.ipynb  # Fine-tuning and evaluation of DistilBERT
 ├── LSTM_Classifier.ipynb        # Training and evaluation of custom LSTM model
-├── lime-distil.png              # LIME visualization for DistilBERT
-├── TF_DB.png                    # LIME visualization for LSTM
 └── README.md                    # Project overview and usage guide
 ```
 
@@ -101,17 +99,6 @@ pip install torch transformers datasets optuna lime matplotlib scikit-learn tqdm
 
 - Attention weights and **LIME visualizations** were used to analyze model behavior.
 - Example input: *"The food was not that bad."*
-
-### LIME Visualizations:
-
-#### DistilBERT  
-![DistilBERT LIME](lime-distil.png)
-
-#### LSTM  
-![LSTM LIME](TF_DB.png)
-
-- **DistilBERT** focused on `not`, `bad`, and `food` with sharp weight distribution.
-- **LSTM** showed similar important tokens but with flatter attention weights.
 
 ---
 
