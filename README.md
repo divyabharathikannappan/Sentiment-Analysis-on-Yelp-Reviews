@@ -25,6 +25,7 @@ This project compares two models — a custom LSTM with attention and a fine-tun
 - LIME
 - scikit-learn
 - tqdm
+- nltk
 
 ### ✅ Installation
 
@@ -32,6 +33,15 @@ This project compares two models — a custom LSTM with attention and a fine-tun
 pip install torch transformers datasets optuna lime matplotlib scikit-learn tqdm
 ```
 
+📥 NLTK Setup
+To use NLTK for tokenization and stopword removal, download the following data packages:
+```python
+import nltk
+nltk.download('punkt_tab')
+nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('omw-1.4')
+```
 ---
 
 ## 🚀 Usage
